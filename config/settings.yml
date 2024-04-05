@@ -1,0 +1,25 @@
+geo_customization:
+  geo_customization_enabled:
+    default: true
+    client: true
+  geo_enable_admin_override:
+    default: false
+    client: false
+  geo_admin_ip_address:
+    # default: "174.50.213.1"
+    type: list
+    default: '173.32.159.123' # canada
+    client: true
+    allow_any: true
+    choices: 
+      - 174.50.213.1 - USA
+      - 175.156.235.1 - Singapore
+      - 173.32.159.1 - Canada
+  geo_include_city: 
+    type: bool
+    default: false
+    client: true
+  geo_include_country_code: 
+    type: bool
+    default: true
+    client: true

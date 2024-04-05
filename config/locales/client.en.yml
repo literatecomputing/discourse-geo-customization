@@ -1,0 +1,19 @@
+en:
+  site_settings:
+    geo_customization_enabled: "Enable Geo Customization Plugin"
+    geo_include_city: "Include City in <body> tag"
+    geo_include_country_code: "Include Country Code in <body> tag"
+    geo_include_country: "Include Country in <body> tag"
+    geo_admin_ip_address: "Use first of these for Admin IP Address Geo Customization"
+    geo_enable_admin_override: "Use Admin IP Address for admin users"
+  admin_js:
+    admin:
+      site_settings:
+        geo_customization_enabled: "Enable Geo Customization"
+        geo_include_city: "Include City"
+        geo_include_country_code: "Include Country Code"
+        geo_include_country: "Include Country"
+        categories:
+          geo_customization: "Geo Customization"
+  js:
+    discourse_geo_customization:
