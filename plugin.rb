@@ -19,10 +19,10 @@ require_relative "lib/geo_customization_module/engine"
 after_initialize do
   add_to_serializer(:current_user, :geo_location) do
     begin
-    if SiteSetting.geo_enable_admin_override && object.admin || 
-      object.ip_address == '127.0.0.1' || object.ip_address == '::1'
-      object.ip_address = SiteSetting.geo_admin_ip_address.split("|").first.split("-").first.strip
-    end
+      if SiteSetting.geo_enable_admin_override && object.admin ||
+           object.ip_address == "127.0.0.1" || object.ip_address == "::1"
+        object.ip_address = SiteSetting.geo_admin_ip_address.split("|").first.split("-").first.strip
+      end
     rescue => e
       Rails.logger.error("Error in geo_customization IP override: #{e}")
     end
